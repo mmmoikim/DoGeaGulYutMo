@@ -1,0 +1,43 @@
+<resources>
+    
+    <string name="nm_app_name">MobilePlatform</string>
+
+    <!-- sign -->
+    <string name="nm_sign_login">Sign In</string>
+    <string name="nm_sign_sign_up">Sign Up</string>
+    <string name="nm_sign_find_email">Search Email</string>
+    <string name="nm_sign_find_password">Search Password</string>
+    <string name="nm_sign_reset_password">Reset Password</string>
+    <string name="nm_sign_mobile_auth">Confirm Your Phone</string>
+    <string name="nm_sign_nation_list">Select Country</string>
+    <string name="nm_sign_notice">Notice</string>
+    <string name="nm_sign_modify_id">Change Email</string>
+    <string name="nm_sign_modify_password">Reset Password</string>
+    <string name="nm_sign_modify_phone_number">Cell Phone Number Change</string>
+    <string name="nm_sign_policy">Privacy Policy</string>
+    <string name="nm_sign_stipulation">Terms of Service</string>
+    <string name="nm_sign_agreement">Agree to Terms of Use</string>
+    <string name="nm_add_info">Optional Info</string>
+    <string name="nm_sign_no">No</string>
+    <string name="nm_sign_yes">Yes</string>
+    <string name="nm_sign_confirm">Confirm</string>
+    <string name="nm_facebook_account_notice_title">Please keep in mind!</string>
+    <string name="nm_facebook_account_notice_title_desc">An existing Facebook account detected on this device.</string>
+    <string name="nm_facebook_notice_upper">NOTICE</string>
+    <string name="nm_facebook_account_notice_content">If you log in with a different Facebook account, may affect the game<![CDATA["'"]]>s data<![CDATA[";"]]> such as purchases, items and etc.</string>
+    <string name="nm_facebook_another_account_notice_title">You have logged in with a Facebook account from a different device.</string>
+    <string name="nm_facebook_another_account_notice_content">Logging in with the current Facebook account may delete the data from the previous device.</string>
+    <string name="nm_facebook_cannot_use_desc">You have logged in with a Facebook account that does not match with the current Netmarble account email. The Facebook functions will be suspended. In order to recover the Facebook functions, please log in with the email account associated with Facebook.</string>
+    <string name="nm_device_cannot_user_desc">A record of without logging in has been detected. If Sign in: Deleting the App may affect the purchases made within the game; items, characters, etc.</string>
+
+    <!-- profile -->
+    <string name="nm_profile_name">Profile Name</string>
+
+    <!-- common -->
+    <string name="nm_confirm">Confirm</string>
+    <string name="nm_cancel">Cancel</string>
+    
+    <string name="nm_search_no_result">No search results.</string>
+    <string name="nm_cannot_loading_and_retry">Cannot connect to the server. Please check your internet and try again.</string>
+
+</resources>

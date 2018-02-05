@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@drawable/nm_base_header_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/nm_base_header_backpress_button"
+        android:layout_width="42dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back_button_drawable" />
+
+    <TextView
+        android:id="@+id/nm_base_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/nm_base_header_backpress_button"
+        android:textColor="#3A2C27"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/nm_base_header_info_button"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" 
+        android:background="@drawable/navigation_refresh"
+        android:visibility="gone"/>
+
+</RelativeLayout>

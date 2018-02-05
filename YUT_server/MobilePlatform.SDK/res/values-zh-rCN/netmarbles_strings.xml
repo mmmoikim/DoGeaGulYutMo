@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="nm_app_name">MobilePlatform</string>
+    
+    <!-- sign -->
+    <string name="nm_sign_login">登录</string>
+    <string name="nm_sign_sign_up">注册</string>
+    <string name="nm_sign_find_email">找回邮箱</string>
+    <string name="nm_sign_find_password">找回密码</string>
+    <string name="nm_sign_reset_password">重置密码</string>
+    <string name="nm_sign_mobile_auth">手机验证</string>
+    <string name="nm_sign_nation_list">选择国家编号</string>
+    <string name="nm_sign_notice">通知</string>
+    <string name="nm_sign_modify_id">邮箱变更</string>
+    <string name="nm_sign_modify_password">修改密码</string>
+    <string name="nm_sign_modify_phone_number">修改手机号码</string>
+    <string name="nm_sign_policy">个人信息处理方针</string>
+    <string name="nm_sign_stipulation">服务协议</string>
+    <string name="nm_sign_agreement">用户协议</string>
+    <string name="nm_add_info">输入附加信息</string>
+    <string name="nm_sign_no">否</string>
+    <string name="nm_sign_yes">是</string>
+    <string name="nm_sign_confirm">确认</string>
+    <string name="nm_facebook_account_notice_title">登录facebook前，请先确认！</string>
+    <string name="nm_facebook_account_notice_title_desc">有使用此手机登录过的facebook账号</string>
+    <string name="nm_facebook_notice_upper">提醒</string>
+    <string name="nm_facebook_account_notice_content">使用其他facebook账号登录，现存的服务记录可能会被删除。</string>
+    <string name="nm_facebook_another_account_notice_title">您登录了其它手机使用过的facebook的账号。</string>
+    <string name="nm_facebook_another_account_notice_content">使用此facebook账号，现存的服务记录可能会被删除。</string>
+    <string name="nm_facebook_cannot_use_desc">当前邮箱使用的facebook账号已被其他facebook账号注册导致服务受限。为了确保facebook账号的正常使用，请您到facebook 应用中心用使用过的facebook账号重新登录。</string>
+    <string name="nm_device_cannot_user_desc">发现了非登录状态下的游戏记录。 重新登录使原来的游戏记录以及购买的道具将会消失。</string>
+    
+    <!-- profile -->
+    <string name="nm_profile_name">用户名</string>
+    
+    <!-- common -->
+    <string name="nm_confirm">确认</string>
+    <string name="nm_cancel">取消</string>
+    
+    <string name="nm_search_no_result">没有搜索结果</string>
+    <string name="nm_cannot_loading_and_retry">网路连接失败，请重试！</string>
+
+</resources>

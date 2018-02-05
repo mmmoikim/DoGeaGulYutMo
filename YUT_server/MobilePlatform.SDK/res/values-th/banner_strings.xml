@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Banner String Resources -->
+    <string name="NMBannerDialogStartGameMessage">เริ่มเล่นเกมนี้</string>
+    <string name="NMBannerDialogStartGamePositiveText">เล่นเลย</string>
+    <string name="NMBannerDialogStartGameNegativeText">ถัดไป</string>
+    
+    <string name="NMBannerDialogDownloadGameMessage">ดาวน์โหลดเกมนี้</string>
+    <string name="NMBannerDialogDownloadGamePositiveText">ดาวน์โหลด</string>
+    <string name="NMBannerDialogDownloadGameNegativeText">ถัดไป</string>
+    
+</resources>

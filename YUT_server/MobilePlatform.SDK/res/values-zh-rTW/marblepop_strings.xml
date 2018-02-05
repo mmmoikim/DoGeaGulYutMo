@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- MarblePop String Resources -->
+    <string name="NMPopupNotShowToday">今日不再顯示</string>
+    <string name="NMPopupClose">關閉 X</string>
+    <string name="NMPopupNotice">公告</string>
+    
+    <string name="NMPopupExitCenterText">確定要結束遊戲嗎?</string>
+    <string name="NMPopupExitMoreGame">查看其他遊戲</string>
+    <string name="NMPopupExitClose">結束</string>
+    
+    <string name="NMPopupDialogStartGameMessage">現在要執行該遊戲嗎?</string>
+    <string name="NMPopupDialogStartGamePositiveText">現在執行</string>
+    <string name="NMPopupDialogStartGameNegativeText">稍後執行</string>
+    
+    <string name="NMPopupDialogDownloadGameMessage">現在要下載該遊戲嗎?</string>
+    <string name="NMPopupDialogDownloadGamePositiveText">現在下載</string>
+    <string name="NMPopupDialogDownloadGameNegativeText">稍後下載</string>
+    
+    <string name="NMPopupNetworkError">網路連接失敗，請重試！</string>
+    
+</resources>

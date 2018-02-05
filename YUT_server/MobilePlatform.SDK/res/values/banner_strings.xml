@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Banner String Resources -->
+    <string name="NMBannerDialogStartGameMessage">Start this game?</string>
+    <string name="NMBannerDialogStartGamePositiveText">Start now</string>
+    <string name="NMBannerDialogStartGameNegativeText">Later</string>
+    
+    <string name="NMBannerDialogDownloadGameMessage">Download this game?</string>
+    <string name="NMBannerDialogDownloadGamePositiveText">Download now</string>
+    <string name="NMBannerDialogDownloadGameNegativeText">Later</string>
+    
+</resources>

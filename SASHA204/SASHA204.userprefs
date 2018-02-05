@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\d\SASHA204\Assets\CS\throw_button.cs">
+    <Files>
+      <File FileName="..\d\SASHA204\Assets\CS\goal_ani.cs" Line="94" Column="15" />
+      <File FileName="..\d\SASHA204\Assets\CS\throw_button.cs" Line="76" Column="56" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

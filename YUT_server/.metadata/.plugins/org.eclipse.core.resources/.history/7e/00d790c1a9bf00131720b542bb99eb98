@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sasha.sasha"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+    <permission android:name="com.cjenm.samplegame.unity.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.cjenm.samplegame.unity.permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sasha.sasha.MainActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--  Netmarble GMC2 --> 
+		<meta-data android:name="net.netmarble.m.gmc2.domain" android:value=".netmarble.net" /> 
+  
+        <!-- Netmarble Push -->
+        <meta-data
+            android:name="net.netmarble.m.push.id"
+            android:value="@string/senderId"/>
+        
+        <meta-data 
+            android:name="net.netmarble.m.push.service"
+            android:value="net.netmarble.m.platform.push.PushIntentService"/>
+        
+        <!-- User Push Service -->
+        <meta-data 
+            android:name="net.netmarble.m.platform.api.push"
+            android:value="com.cjenm.samplegame.unity.SamplePushService"/>
+        
+        <!-- GCM Receiver -->
+        <receiver 
+            android:name="net.netmarble.m.push.gcm.PushBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="net.netmarble.m.push" />
+            </intent-filter>
+        </receiver>
+        <receiver
+			android:name="net.netmarble.m.platform.push.PushBroadcastReceiver"
+			android:exported="false" >
+			<intent-filter >
+				<action android:name="netmarble.push.action.PUSH_REGISTERED" />
+				<action android:name="netmarble.push.action.PUSH_UNREGISTERED" />
+			</intent-filter>
+		</receiver>
+		
+		<!-- GCM Service -->
+		<service android:name="net.netmarble.m.push.gcm.GCMIntentService" />
+		<service android:name="net.netmarble.m.push.gcm.PushIntentService" />
+		
+		<!-- Netmarble MobilePlatform Activity -->
+		<activity
+			android:name="net.netmarble.m.sign.SignActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.Translucent"
+			android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+		<activity
+			android:name="net.netmarble.m.community.CommunityActivity"
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.Light"
+			android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+    </application>
+
+</manifest>

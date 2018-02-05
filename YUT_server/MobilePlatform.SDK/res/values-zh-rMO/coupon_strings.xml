@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="coupon_close">關閉</string>
+    <string name="coupon_error">發生分頁錯誤</string>
+
+</resources>

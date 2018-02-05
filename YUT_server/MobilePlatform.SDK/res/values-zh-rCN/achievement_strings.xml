@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="achievement_close">关闭</string>
+    <string name="achievement_error">发生页面错误</string>
+</resources>

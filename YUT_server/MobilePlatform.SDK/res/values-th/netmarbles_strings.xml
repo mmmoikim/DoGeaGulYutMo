@@ -1,0 +1,43 @@
+﻿<resources>
+    
+    <string name="nm_app_name">MobilePlatform</string>
+
+    <!-- sign -->
+    <string name="nm_sign_login">เข้าเกม</string>
+    <string name="nm_sign_sign_up">สมัครไอดีใหม่</string>
+    <string name="nm_sign_find_email">อีเมล์</string>
+    <string name="nm_sign_find_password">รหัสผ่าน</string>
+    <string name="nm_sign_reset_password">ยืนยันรหัสผ่าน</string>
+    <string name="nm_sign_mobile_auth">เบอร์โทรศัพท์</string>
+    <string name="nm_sign_nation_list">เลือกที่อยู่</string>
+    <string name="nm_sign_notice">ประกาศ</string>
+    <string name="nm_sign_modify_id">เปลี่ยนอีเมล์</string>
+    <string name="nm_sign_modify_password">รีเซ็ตรหัสผ่าน</string>
+    <string name="nm_sign_modify_phone_number">เปลี่ยนเบอร์โทรศัพท์</string>
+    <string name="nm_sign_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="nm_sign_stipulation">เงื่อนไขการให้บริการ</string>
+    <string name="nm_sign_agreement">ยอมรับเงื่อนไข</string>
+    <string name="nm_add_info">ข้อมูลถูกต้องหรือไม่</string>
+    <string name="nm_sign_no">ไม่</string>
+    <string name="nm_sign_yes">ไช่</string>
+    <string name="nm_sign_confirm">ตกลง</string>
+    <string name="nm_facebook_account_notice_title">จดจำข้อมูลบัญชี</string>
+    <string name="nm_facebook_account_notice_title_desc">ตรวจพบบัญชีไอดี Facebook ที่คุณใช้อยู่</string>
+    <string name="nm_facebook_notice_upper">ประกาศ</string>
+    <string name="nm_facebook_account_notice_content">หากคุณเข้าเล่นเกมด้วยไอดี Facebook จะมีผลต่อการเล่นเกมด้วย<![CDATA["'"]]>s data<![CDATA[";"]]>เช่นการซื้อสินค้าและอื่น ๆ</string>
+    <string name="nm_facebook_another_account_notice_title">คุณได้เข้าสู่ระบบด้วยไอดี Facebook</string>
+    <string name="nm_facebook_another_account_notice_content">ปัจจุบันมีการเข้าสู่ระบบด้วยบัญชีไอดี Facebook อาจมีการลบข้อมูลไอดีผู้ใช้อื่นก่อนหน้านี้</string>
+    <string name="nm_facebook_cannot_use_desc">คุณเข้าสู่ระบบด้วยบัญชีไอดี Facebook ที่มีอีเมล์ไม่ตรงกับไอดีของ Netmarble การทำงานด้วยไอดี Facebook จะถูกยุติ เพื่อเริ่มการทำงานด้วยไอดี Facebook กรุณาเข้าสู่ระบบด้วยอีเมล์เดียวกันกับไอดี Facebook</string>
+    <string name="nm_device_cannot_user_desc">การเข้าสู้ระบบแบบไม่มีการบันทึกข้อมูล หากทำการลบ App อาจส่งผลกระทบต่อสินค้าที่ซื้อภายในเกม ข้อมูลตัวละคร และอื่นๆ</string>
+
+    <!-- profile -->
+    <string name="nm_profile_name">ชื่อประวัติ</string>
+
+    <!-- common -->
+    <string name="nm_confirm">ตกลง</string>
+    <string name="nm_cancel">ยกเลิก</string>
+    
+    <string name="nm_search_no_result">ไม่มีผลลัพธ์ที่ค้นหา.</string>
+    <string name="nm_cannot_loading_and_retry">ไม่สามารถเชื่อมต่อ Serverได้ กรุณาตรวจสอบอินเตอร์เน็ตของท่าน แล้วทดลองใหม่อีกครั้ง</string>
+
+</resources>

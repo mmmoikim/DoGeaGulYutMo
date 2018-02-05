@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="coupon_close">Close</string>
+    <string name="coupon_error">Error on page</string>
+
+</resources>

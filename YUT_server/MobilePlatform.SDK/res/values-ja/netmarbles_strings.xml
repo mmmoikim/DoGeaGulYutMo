@@ -1,0 +1,41 @@
+<resources>
+    <string name="nm_app_name">MobilePlatform</string>
+
+    <!-- sign -->
+    <string name="nm_sign_login">ログイン</string>
+    <string name="nm_sign_sign_up">会員登録</string>
+    <string name="nm_sign_find_email">メールアドレスの検索</string>
+    <string name="nm_sign_find_password">パスワードの検索</string>
+    <string name="nm_sign_reset_password">新しいパスワード</string>
+    <string name="nm_sign_mobile_auth">モバイル認証</string>
+    <string name="nm_sign_nation_list">国の選択</string>
+    <string name="nm_sign_notice">通知</string>
+    <string name="nm_sign_modify_id">メールアドレスの変更</string>
+    <string name="nm_sign_modify_password">パスワードの変更</string>
+    <string name="nm_sign_modify_phone_number">携帯番号の変更</string>
+    <string name="nm_sign_policy">個人情報処理（取扱）方針</string>
+    <string name="nm_sign_stipulation">サービス利用規約</string>
+    <string name="nm_sign_agreement">利用規約に同意</string>
+    <string name="nm_add_info">追加情報の入力</string>
+    <string name="nm_sign_no">いいえ</string>
+    <string name="nm_sign_yes">はい</string>
+    <string name="nm_sign_confirm">確認</string>
+    <string name="nm_facebook_account_notice_title">Facebookでログインする前に</string>
+    <string name="nm_facebook_account_notice_title_desc">この端末で以前ログインしたFacebookアカウントが存在します。</string>
+    <string name="nm_facebook_notice_upper">ガイド</string>
+    <string name="nm_facebook_account_notice_content">このアカウント以外のFacebookアカウントでログインすると、以前のサービス記録が削除される場合があります。</string>
+    <string name="nm_facebook_another_account_notice_title">他の端末で使用したFacebookアカウントでログインしています。 現在ログインしているアカウントを使用しますか？</string>
+    <string name="nm_facebook_another_account_notice_content">このFacebookアカウントを使用すると、以前の端末で利用したサービス記録が削除される場合があります。</string>
+    <string name="nm_facebook_cannot_use_desc">このメールアドレスを使用したFacebookアカウントとは異なるアカウントでログインしました。そのためFacebookの機能の使用が制限されます。Facebookの機能を通常通りご利用いただくにはFacebookのアプリで使用したアカウントでログインしなおしてください。</string>
+    <string name="nm_device_cannot_user_desc">ログインせずプレイした記録が残っています。 このプレイ記録はログインすると削除されます。その際、購入したアイテムなども削除されますのでご注意ください。</string>
+
+    <!-- profile -->
+    <string name="nm_profile_name">ニックネーム</string>
+
+    <!-- common -->
+    <string name="nm_confirm">確認</string>
+    <string name="nm_cancel">取消</string>
+    <string name="nm_search_no_result">検索結果がありません。</string>
+    <string name="nm_cannot_loading_and_retry">サーバーに接続できません。通信状態をご確認ください。</string>
+
+</resources>

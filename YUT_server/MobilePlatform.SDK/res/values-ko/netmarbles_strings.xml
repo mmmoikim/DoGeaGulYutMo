@@ -1,0 +1,41 @@
+<resources>
+    <string name="nm_app_name">MobilePlatform</string>
+
+    <!-- sign -->
+    <string name="nm_sign_login">로그인</string>
+    <string name="nm_sign_sign_up">회원가입</string>
+    <string name="nm_sign_find_email">이메일 찾기</string>
+    <string name="nm_sign_find_password">비밀번호 찾기</string>
+    <string name="nm_sign_reset_password">비밀번호 재설정</string>
+    <string name="nm_sign_mobile_auth">휴대폰 인증</string>
+    <string name="nm_sign_nation_list">국가선택</string>
+    <string name="nm_sign_notice">알림</string>
+    <string name="nm_sign_modify_id">이메일 변경</string>
+    <string name="nm_sign_modify_password">비밀번호 변경</string>
+    <string name="nm_sign_modify_phone_number">휴대폰 번호 변경</string>
+    <string name="nm_sign_policy">개인정보 처리(취급)방침</string>
+    <string name="nm_sign_stipulation">서비스 이용약관</string>
+    <string name="nm_sign_agreement">이용약관 동의</string>
+    <string name="nm_add_info">추가 정보 입력</string>
+    <string name="nm_sign_no">아니오</string>
+    <string name="nm_sign_yes">예</string>
+    <string name="nm_sign_confirm">확인</string>
+    <string name="nm_facebook_account_notice_title">Facebook 로그인 전, 확인해주세요!</string>
+    <string name="nm_facebook_account_notice_title_desc">이 단말기로 로그인했던 Facebook 계정이 존재합니다.</string>
+    <string name="nm_facebook_notice_upper">안내</string>
+    <string name="nm_facebook_account_notice_content">이 계정 이외 다른 Facebook 계정으로 로그인하시면 기존 서비스 기록이 삭제될 수 있습니다.</string>
+    <string name="nm_facebook_another_account_notice_title">다른 단말기에서 사용했던 Facebook 계정으로 로그인하셨네요. 지금 로그인 하신 계정을 사용하시겠습니까?</string>
+    <string name="nm_facebook_another_account_notice_content">이 Facebook 계정을 사용하시면 기존 단말기에서 이용하셨던 서비스 기록이 삭제될 수 있습니다.</string>
+    <string name="nm_facebook_cannot_use_desc">현재 이메일 계정에서 사용하셨던 페이스북 계정과 다른 페이스북 계정으로 로그인되었습니다. 이로 인해 페이스북 기능에 대한 사용이 제한됩니다. 페이스북 기능을 정상적으로 이용하시려면 페이스북 앱에서 사용하셨던 페이스북 계정으로 다시 로그인해주세요.</string>
+    <string name="nm_device_cannot_user_desc">비로그인 상태로 플레이한 기록이 발견되었습니다. 로그인하시면 게임 기록과 구매한 아이템이 사라집니다.</string>
+
+    <!-- profile -->
+    <string name="nm_profile_name">프로필 이름</string>
+
+    <!-- common -->
+    <string name="nm_confirm">확인</string>
+    <string name="nm_cancel">취소</string>
+    <string name="nm_search_no_result">검색결과가 없습니다.</string>
+    <string name="nm_cannot_loading_and_retry">서버에 접속할 수 없습니다. 인터넷 연결을 확인 후 다시 시도해 주세요.</string>
+
+</resources>

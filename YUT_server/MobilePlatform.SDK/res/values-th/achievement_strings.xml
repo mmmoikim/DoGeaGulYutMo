@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="achievement_close">ปิด</string>
+    <string name="achievement_error">เกิดข้อผิดพลาดการแสดงผลในหน้านี้</string>
+</resources>

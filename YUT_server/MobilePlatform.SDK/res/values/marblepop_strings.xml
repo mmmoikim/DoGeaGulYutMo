@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- MarblePop String Resources -->
+    <string name="NMPopupNotShowToday">Don\'t Show for Today</string>
+    <string name="NMPopupClose">Close X</string>
+    <string name="NMPopupNotice">Notice</string>
+    
+    <string name="NMPopupExitCenterText">Will you exit the game?</string>
+    <string name="NMPopupExitMoreGame">See more games</string>
+    <string name="NMPopupExitClose">Exit</string>
+    
+    <string name="NMPopupDialogStartGameMessage">Start this game?</string>
+    <string name="NMPopupDialogStartGamePositiveText">Start now</string>
+    <string name="NMPopupDialogStartGameNegativeText">Later</string>
+    
+    <string name="NMPopupDialogDownloadGameMessage">Download this game?</string>
+    <string name="NMPopupDialogDownloadGamePositiveText">Download now</string>
+    <string name="NMPopupDialogDownloadGameNegativeText">Later</string>
+    
+    <string name="NMPopupNetworkError">Unstable network. Verify your network settings and try again.</string>
+    
+</resources>

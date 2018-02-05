@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- MarblePop String Resources -->
+    <string name="NMPopupNotShowToday">오늘은 그만보기</string>
+    <string name="NMPopupClose">닫기 X</string>
+    <string name="NMPopupNotice">공지사항</string>
+    
+    <string name="NMPopupExitCenterText">게임을 종료하시겠습니까?</string>
+    <string name="NMPopupExitMoreGame">다른 게임 더보기</string>
+    <string name="NMPopupExitClose">종료하기</string>
+    
+    <string name="NMPopupDialogStartGameMessage">지금 해당 게임을 실행하시겠습니까?</string>
+    <string name="NMPopupDialogStartGamePositiveText">지금 실행</string>
+    <string name="NMPopupDialogStartGameNegativeText">나중에 하기</string>
+    
+    <string name="NMPopupDialogDownloadGameMessage">지금 해당 게임을 다운로드 받으시겠습니까?</string>
+    <string name="NMPopupDialogDownloadGamePositiveText">지금 다운로드</string>
+    <string name="NMPopupDialogDownloadGameNegativeText">나중에 하기</string>
+    
+    <string name="NMPopupNetworkError">네트워크 연결이 원활하지 않습니다.  네크워크 연결상태를 확인하시고 다시 시도해주세요.</string>
+    
+</resources>

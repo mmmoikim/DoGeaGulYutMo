@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Banner String Resources -->
+    <string name="NMBannerDialogStartGameMessage">是否运行当前游戏？</string>
+    <string name="NMBannerDialogStartGamePositiveText">立即运行</string>
+    <string name="NMBannerDialogStartGameNegativeText">稍后运行</string>
+    
+    <string name="NMBannerDialogDownloadGameMessage">是否下载当前游戏？</string>
+    <string name="NMBannerDialogDownloadGamePositiveText">立即下载</string>
+    <string name="NMBannerDialogDownloadGameNegativeText">稍后下载</string>
+    
+</resources>

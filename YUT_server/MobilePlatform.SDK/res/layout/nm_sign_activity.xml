@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/nm_sign_activity_main_layout"
+    android:background="#ffaaaaaa" >
+    
+    <include 
+        android:id="@+id/nm_sign_activity_head_layout"
+        layout="@layout/nm_base_header" />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nm_sign_activity_head_layout" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+	
+	        <WebView
+	            android:id="@+id/nm_sign_activity_web_view"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" />
+	        
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nm_sign_activity_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/network_error" />
+        </RelativeLayout>
+    </FrameLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gnb_bottom_shadow"
+        android:layout_below="@+id/nm_sign_activity_head_layout" />
+    
+    <include
+        android:id="@+id/nm_sign_activity_progress_bar"
+        layout="@layout/nm_progress" />
+    
+</RelativeLayout>

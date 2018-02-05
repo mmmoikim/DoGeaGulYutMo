@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<channel value="netmarbles" />
+	<locale value="ko_kr" />
+	<zone value="alpha" />
+	<logging value="true" />
+	<sign value="netmarbles" />
+	<market value="google" />
+	<game code="techtft001" />
+</properties>

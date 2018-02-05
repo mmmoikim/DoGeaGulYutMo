@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- MarblePop String Resources -->
+    <string name="NMPopupNotShowToday">ไม่แสดงอีกในวันนี้</string>
+    <string name="NMPopupClose">ปิด X</string>
+    <string name="NMPopupNotice">ประกาศ</string>
+    
+    <string name="NMPopupExitCenterText">คุณแน่ใจว่าจะออกจากเกมใช่หรือไม่</string>
+    <string name="NMPopupExitMoreGame">กลับไปเล่นเกมต่อ</string>
+    <string name="NMPopupExitClose">ออก</string>
+    
+    <string name="NMPopupDialogStartGameMessage">เริ่มเล่นเกม</string>
+    <string name="NMPopupDialogStartGamePositiveText">เล่นเลย</string>
+    <string name="NMPopupDialogStartGameNegativeText">ถัดไป</string>
+    
+    <string name="NMPopupDialogDownloadGameMessage">ดาวน์โหลดเกมนี้</string>
+    <string name="NMPopupDialogDownloadGamePositiveText">ดาวน์โหลด</string>
+    <string name="NMPopupDialogDownloadGameNegativeText">ถัดไป</string>
+    
+    <string name="NMPopupNetworkError">เครือข่ายอินเทอร์เน็ตขัดข้อง กรุณาตรวจสอบ แล้วกลับมาอีกครั้ง</string>
+    
+</resources>

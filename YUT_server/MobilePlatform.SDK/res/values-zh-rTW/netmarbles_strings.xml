@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="nm_app_name">MobilePlatform</string>
+    
+    <!-- sign -->
+    <string name="nm_sign_login">登入</string>
+    <string name="nm_sign_sign_up">加入會員</string>
+    <string name="nm_sign_find_email">找回E-Mail地址</string>
+    <string name="nm_sign_find_password">找回密碼</string>
+    <string name="nm_sign_reset_password">重新設定密碼</string>
+    <string name="nm_sign_mobile_auth">手機認證</string>
+    <string name="nm_sign_nation_list">選擇國碼</string>
+    <string name="nm_sign_notice">提示</string>
+    <string name="nm_sign_modify_id">E-Mail地址變更</string>
+    <string name="nm_sign_modify_password">修改密碼</string>
+    <string name="nm_sign_modify_phone_number">修改手機號碼</string>
+    <string name="nm_sign_policy">個人資訊處理方針</string>
+    <string name="nm_sign_stipulation">服務協定</string>
+    <string name="nm_sign_agreement">使用者協議書</string>
+    <string name="nm_add_info">輸入追加資訊</string>
+    <string name="nm_sign_no">否</string>
+    <string name="nm_sign_yes">是</string>
+    <string name="nm_sign_confirm">確認</string>
+    <string name="nm_facebook_account_notice_title">登入Facebook前請確認!</string>
+    <string name="nm_facebook_account_notice_title_desc">以該裝置登入的Facebook帳號已存在。</string>
+    <string name="nm_facebook_notice_upper">通知</string>
+    <string name="nm_facebook_account_notice_content">該帳號之外，以其他Facebook帳號登入時，可能將會刪除原本的遊戲記錄。</string>
+    <string name="nm_facebook_another_account_notice_title">您以在其他裝置使用過的Facebook帳號登入。</string>
+    <string name="nm_facebook_another_account_notice_content">使用該Facebook的帳號時，可能將會刪除原本裝置的服務記錄。</string>
+    <string name="nm_facebook_cannot_use_desc">目前登入的該Facebook帳號，與曾在E-mail帳號使用過的Facebook帳號不同。因此會被限制使用Facebook相關功能。如果要正常使用Facebook功能，請以在Facebook應用程式使用過的Facebook帳號登入。</string>
+    <string name="nm_device_cannot_user_desc">發現非登入狀態下進行遊戲的紀錄。 登入時遊戲紀錄和購買的道具會消失。</string>
+    
+    <!-- profile -->
+    <string name="nm_profile_name">用戶名稱</string>
+    
+    <!-- common -->
+    <string name="nm_confirm">確認</string>
+    <string name="nm_cancel">取消</string>
+    
+    <string name="nm_search_no_result">沒有搜索結果</string>
+    <string name="nm_cannot_loading_and_retry">網路連接失敗，請重試！</string>
+
+</resources>

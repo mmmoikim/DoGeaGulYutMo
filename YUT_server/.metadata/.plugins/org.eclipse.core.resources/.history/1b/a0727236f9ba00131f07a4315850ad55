@@ -1,0 +1,307 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.ConnectException;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+public class Handler extends Thread {
+
+	protected Socket socket;
+
+	public Handler(Socket clientsocket) {
+		this.socket = clientsocket;
+		
+	}
+	private Room_manage manager = new Room_manage();
+
+
+	public void run() {
+
+		String read_string = null;
+
+		while (true) {
+			try {
+				BufferedReader reader = new BufferedReader(
+						new InputStreamReader(socket.getInputStream()));
+				BufferedWriter writer =new BufferedWriter(
+						new OutputStreamWriter(socket.getOutputStream()));
+
+				
+				List<String> token = new ArrayList<String>();
+				
+				read_string = reader.readLine();//읽기
+				if(read_string != null)
+				{
+					
+					token = tokenizer(read_string);
+					
+					for(int i=0; i<token.size(); i++)
+					{
+						System.out.println("방금 받음" + token.get(i));
+					}
+					
+					System.out.println("\n");
+					
+					if(token.get(0).equals("room_create"))
+					{
+
+					   int last_room_num = YK_Static.list_room.size();
+						manager.create_room(Integer.parseInt(token.get(1)),last_room_num,writer);
+						//System.out.println("enter_ok#" + last_room_num + "#" + YK_Static.list_room.get(last_room_num).out_currplayer());
+						//writer.write("enter_ok#" + last_room_num + "#" + YK_Static.list_room.get(last_room_num).out_currplayer());
+						//writer.flush();
+						YK_Static.list_room.get(last_room_num).send_Room_member("player_enter#" + 0 + "#" + last_room_num, -1);
+						System.out.println("player_enter#" + 0 + "#" + last_room_num);
+						
+					}
+					else if(token.get(0).equals("room_enter"))
+					{
+						System.out.println("size : " + YK_Static.list_room.size());
+						int empty_room_num = manager.search_room();
+						System.out.println("empty room" + empty_room_num);
+						
+						if(manager.enter_room(empty_room_num,writer) == 1)
+						{
+							int playernum = YK_Static.list_room.get(empty_room_num).out_currplayer();
+						//	System.out.println("enter_ok#" + empty_room_num + "#" + playernum);
+						//	writer.write("enter_ok#" + empty_room_num + "#" + playernum);
+						//	writer.flush();
+							System.out.println("player_enter#" + playernum + "#" + empty_room_num);
+							YK_Static.list_room.get(empty_room_num).send_Room_member("player_enter#" + playernum + "#" + empty_room_num, -1);
+						}
+						else
+						{
+							writer.write("room_full#");
+							writer.flush();
+						}
+					}
+					else if(token.get(0).equals("quit"))
+					{
+						int r_num = Integer.parseInt(token.get(1));
+						int player_num = Integer.parseInt(token.get(2));
+						
+						System.out.println(" quit room : " + r_num + "player : " + player_num);
+						
+						YK_Static.list_room.get(r_num).send_Room_member("quit_other#" + player_num, player_num);
+							
+					}
+					else if(token.get(0).equals("throw_yut"))
+					{
+						String yut = token.get(1);
+						int room_num = Integer.parseInt(token.get(2));
+						int my_turn = Integer.parseInt(token.get(3));
+						System.out.println("room_num : " + room_num + "my_turn : " + my_turn);
+						
+						
+						switch(yut)
+						{
+						case "Bdo" :
+							YK_Static.list_room.get(room_num).send_Room_member("other_throw#-1#" + my_turn,-1);
+							
+							break;
+						case "nack" :
+							my_turn++;
+							if(my_turn == YK_Static.list_room.get(room_num).out_maxplayer())
+							{
+								my_turn = 0;
+							}
+							YK_Static.list_room.get(room_num).send_Room_member("other_throw#0#" + my_turn, -1);
+							break;
+						case "do" :
+							YK_Static.list_room.get(room_num).send_Room_member("other_throw#1#" + my_turn, -1);
+							break;
+						case "gea" :
+							YK_Static.list_room.get(room_num).send_Room_member("other_throw#2#" + my_turn, -1);
+							break;
+						case "gul" :
+							YK_Static.list_room.get(room_num).send_Room_member("other_throw#3#" + my_turn, -1);
+							break;
+						case "yut" :
+							YK_Static.list_room.get(room_num).send_Room_member("other_throw#4#" + my_turn, -1);
+							break;
+						case "mo" :
+							YK_Static.list_room.get(room_num).send_Room_member("other_throw#5#" + my_turn, -1);
+							break;
+						}
+					}
+					else if(token.get(0).equals("goalin"))
+					{
+						int r_num = Integer.parseInt(token.get(1));
+						int player_num = Integer.parseInt(token.get(2));
+						int mal_num =Integer.parseInt(token.get(3));
+						int hand = Integer.parseInt(token.get(4));
+						int re_turn = 0;
+						int turn = player_num;
+						
+			
+						if(hand == 1)
+						{
+						turn++;
+						if(turn == YK_Static.list_room.get(r_num).out_maxplayer())
+						{
+							turn = 0;
+						}
+						}
+						else if(hand == 2)
+						{
+							re_turn = 1;
+						}
+						
+						
+						YK_Static.list_room.get(r_num).remove_from_board(player_num,mal_num);
+						String temp = YK_Static.list_room.get(r_num).golin_mal(player_num,mal_num);
+						//info = 플레이어#말번호#업혀있던마리#총 골인한수#순위
+
+						int quit_check = 0;
+						
+						if(YK_Static.list_room.get(r_num).out_state() == 3)
+							quit_check = 1;
+						
+						if(YK_Static.list_room.get(r_num).out_grade(turn) != 0)
+						{
+							turn++;
+							re_turn = 0;
+							if(turn == YK_Static.list_room.get(r_num).out_maxplayer())
+							{
+								turn = 0;
+							}
+						}
+						
+						 System.out.println("goalin#"+ temp +
+									"#"+turn+"#"+ re_turn+"#"+quit_check);
+								 
+						YK_Static.list_room.get(r_num).send_Room_member("goalin#"+ temp +
+								"#"+turn+"#"+ re_turn+"#"+quit_check,-1);
+						
+					}
+					else if(token.get(0).equals("mal_move"))
+					{
+						int r_num = Integer.parseInt(token.get(1));
+						int player_num = Integer.parseInt(token.get(2));
+						int mal_num =Integer.parseInt(token.get(3));
+						int x = Integer.parseInt(token.get(4));
+						int y = Integer.parseInt(token.get(5));
+						int hand = Integer.parseInt(token.get(6));//턴 넘어가면 1 아니면 0
+						int re_turn = 0;
+						
+						YK_Static.list_room.get(r_num).remove_from_board(player_num,mal_num);
+						String info = YK_Static.list_room.get(r_num).set_board(x, y, player_num, mal_num);
+						
+						
+						int turn = player_num;
+						
+						if(hand == 1)
+						{
+						turn++;
+						if(turn == YK_Static.list_room.get(r_num).out_maxplayer())
+						{
+							turn = 0;
+						}
+						if(YK_Static.list_room.get(r_num).out_grade(turn) != 0)
+						{
+					turn++;
+					if(turn == YK_Static.list_room.get(r_num).out_maxplayer())
+					{
+						turn = 0;
+					}
+						}
+						}
+						else if(hand == 2)
+						{
+							re_turn = 1;
+						}
+						
+						System.out.println(info.substring(0, 1));
+						if(info.substring(0, 1).equals("c"))
+						{
+							System.out.println("fff");
+							turn = player_num;
+						}
+		
+						System.out.println("mal_move#" + player_num +"#"+mal_num
+								+"#"+x+"#"+y+"#"+turn+"#"+ re_turn + "#" +info);
+						
+						YK_Static.list_room.get(r_num).send_Room_member("mal_move#" + player_num +"#"+mal_num
+								+"#"+x+"#"+y+"#"+turn+"#"+ re_turn + "#" +info, -1);
+							
+					}
+					/*
+					else if(token.get(0).equals("hand_over"))
+					{
+						int r_num = Integer.parseInt(token.get(1));
+						int turn = Integer.parseInt(token.get(2));
+						turn ++;
+						
+						if(turn == YK_Static.list_room.get(r_num).out_maxplayer())
+						{
+							turn = 0;
+						}
+				
+						
+						YK_Static.list_room.get(r_num).send_Room_member("current_turn#" + turn,-1);
+					}
+					*/
+					else if(token.get(0).equals("game_start"))
+					{
+						int r_num = Integer.parseInt(token.get(1));
+						
+						YK_Static.list_room.get(r_num).send_Room_member("game_start#",-1);
+					}
+				}
+				else
+				{
+					reader.close();
+					writer.close();
+				}
+				
+			}
+			catch (IOException e) {
+				System.out.println("Connection closed by client" + e);
+				break;
+			}
+			
+
+		}
+		
+		try {
+		    socket.close();
+		    System.out.println("socket close");
+		}
+
+		catch (IOException e) {
+			System.out.println("socket close failed" + e);
+	}
+
+}
+	
+	public BufferedWriter out_writer()
+	{
+		try
+		{
+		BufferedWriter writer =new BufferedWriter(
+				new OutputStreamWriter(socket.getOutputStream()));
+		return writer;
+		}
+		catch (IOException e) {
+		    System.out.println(e);
+		    return null;
+		}
+	}
+	
+	public List<String> tokenizer(String data)
+	{
+		List<String> token = new ArrayList<String>();
+		StringTokenizer temp = new StringTokenizer(data,"#");
+		while(temp.hasMoreTokens())
+		{
+			token.add(temp.nextToken());
+		}
+		return token;
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Banner String Resources -->
+    <string name="NMBannerDialogStartGameMessage">지금 해당 게임을 실행하시겠습니까?</string>
+    <string name="NMBannerDialogStartGamePositiveText">지금 실행</string>
+    <string name="NMBannerDialogStartGameNegativeText">나중에 하기</string>
+    
+    <string name="NMBannerDialogDownloadGameMessage">지금 해당 게임을 다운로드 받으시겠습니까?</string>
+    <string name="NMBannerDialogDownloadGamePositiveText">지금 다운로드</string>
+    <string name="NMBannerDialogDownloadGameNegativeText">나중에 하기</string>
+    
+</resources>

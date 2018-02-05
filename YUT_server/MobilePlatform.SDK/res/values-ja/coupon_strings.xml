@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="coupon_close">閉じる</string>
+    <string name="coupon_error">ページにエラーが発生しました</string>
+
+</resources>

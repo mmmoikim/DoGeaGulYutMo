@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- MarblePop String Resources -->
+    <string name="NMPopupNotShowToday">今日は表示しない</string>
+    <string name="NMPopupClose">閉じる</string>
+    <string name="NMPopupNotice">お知らせ</string>
+    
+    <string name="NMPopupExitCenterText">ゲームを終了しますか？</string>
+    <string name="NMPopupExitMoreGame">他のゲームをプレイ</string>
+    <string name="NMPopupExitClose">終了する</string>
+    
+    <string name="NMPopupDialogStartGameMessage">このゲームを起動しますか？</string>
+    <string name="NMPopupDialogStartGamePositiveText">起動する</string>
+    <string name="NMPopupDialogStartGameNegativeText">後で起動</string>
+    
+    <string name="NMPopupDialogDownloadGameMessage">このゲームをダウンロードしますか？</string>
+    <string name="NMPopupDialogDownloadGamePositiveText">ダウンロードする</string>
+    <string name="NMPopupDialogDownloadGameNegativeText">後でダウンロード</string>
+    
+    <string name="NMPopupNetworkError">ネットワークの状態が不安定です。ネックワークの状態をご確認ください。</string>
+    
+</resources>

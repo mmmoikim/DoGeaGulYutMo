@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Banner String Resources -->
+    <string name="NMBannerDialogStartGameMessage">このゲームを起動しますか？</string>
+    <string name="NMBannerDialogStartGamePositiveText">起動する</string>
+    <string name="NMBannerDialogStartGameNegativeText">後で起動</string>
+    
+    <string name="NMBannerDialogDownloadGameMessage">このゲームをダウンロードしますか？</string>
+    <string name="NMBannerDialogDownloadGamePositiveText">ダウンロードする</string>
+    <string name="NMBannerDialogDownloadGameNegativeText">後でダウンロード</string>
+    
+</resources>
